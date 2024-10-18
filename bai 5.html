@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 5</title>
+</head>
+<body>
+<script>
+    let arr1 = [];
+    let arr2= [];
+    let result = '';
+    let inText1 = prompt('nhap chuoi thu 1:');
+    let covert1 = inText1.split(/\s+/);
+    let inText2 = prompt('nhap chuoi thu 2:');
+    let covert2 = inText2.split(/\s+/);
+
+    for (let i = 0; i < covert1.length; i++) {
+        if (covert1[i] !== '') {
+            arr1.push(covert1[i]);
+        }
+    }
+    for (let j = 0; j < covert2.length; j++) {
+        if (covert2[j] !== '') {
+            arr2.push(covert2[j])
+        }
+    }
+
+    if(arr1.length === arr2.length && arr1.every((value, index) => value === arr2[index])) {
+        result = 'giong nhau';
+    } else {
+        result = 'khac nhau';
+    }
+    document.write(result)
+</script>
+</body>
+</html>

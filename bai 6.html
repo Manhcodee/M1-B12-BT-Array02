@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 6</title>
+</head>
+<body>
+<script>
+  let arr = [];
+  let inArr = prompt('nhap vao 1 mang ky tu:');
+  let coverArr = inArr.split(/\s+/).join('');
+
+  for (let i = 0; i < coverArr.length; i++) {
+    if (coverArr[i] !== '') {
+      arr.push(coverArr[i]);
+    }
+  }
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === '-') {
+      arr[i] = '_';
+    }
+  }
+  document.write(arr.join(''))
+</script>
+</body>
+</html>

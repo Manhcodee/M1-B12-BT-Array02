@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 3</title>
+</head>
+<body>
+<script>
+    let arr = ['1', 'a', 'b', '2', 'c', 'd', 'f', '3'];
+    let arrLength = arr.length;
+    let count = 0;
+    for (let i = 0; i < arrLength; i++) {
+        if (!isNaN(arr[i]) && arr[i] !== '') {
+            count ++;
+        }
+    }
+    console.log(count)
+    console.log(arrLength)
+</script>
+</body>
+</html>
